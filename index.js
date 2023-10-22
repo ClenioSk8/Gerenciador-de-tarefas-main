@@ -1,6 +1,17 @@
 // Array para armazenar as postagens
 const postagens = [];
 
+//Pegando data do sistema e já deixando ela preenchida no input
+
+const dateSystem = new Date()
+const dia = dateSystem.getDate()
+const mes = dateSystem.getMonth()+1
+const ano = dateSystem.getFullYear()
+const hoje = `${dia}/${mes}/${ano}`
+const input_dta = document.querySelector('#data')
+
+input_dta.value = `${ano}-${mes}-${dia}`
+
 // Função para adicionar uma nova postagem
 function adicionarPostagem(event) {
     event.preventDefault();
