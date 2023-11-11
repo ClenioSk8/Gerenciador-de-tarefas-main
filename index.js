@@ -8,7 +8,7 @@ const dia = dateSystem.getDate()
 const mes = dateSystem.getMonth()+1
 const ano = dateSystem.getFullYear()
 const hoje = `${dia}/${mes}/${ano}`
-const input_dta = document.querySelector('#data')
+const input_dta = document.querySelector('#data')// teste clênio
 
 input_dta.value = `${ano}-${mes}-${dia}`
 
